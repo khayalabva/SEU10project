@@ -26,7 +26,7 @@ public class T4_IframePractice {
     public void iframe_test(){
         //TC #4: Iframe practice
         //1. Create a new class called: T4_Iframes
-        //2. Create new test and make set ups
+        //2. Create new test and make setups
         //3. Go to: https://practice.cydeo.com/iframe
         //4. Assert: “Your content goes here.” Text is displayed.
 
