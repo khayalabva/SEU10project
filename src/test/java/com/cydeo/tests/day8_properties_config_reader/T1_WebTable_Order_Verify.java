@@ -53,6 +53,10 @@ public class T1_WebTable_Order_Verify {
         public void test2(){
             WebTableUtils.returnOrderDate(driver,"Alexandra Gray" );
         }
+        @Test
+        public void test3(){
+        WebTableUtils.orderVerify(driver,"John Doe", "01/08/2021");
+        }
 
 
 }
