@@ -37,6 +37,7 @@
             <scope>test</scope>
         </dependency>
 
+        <!--  https://github.com/DiUS/java-faker -->
         <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
