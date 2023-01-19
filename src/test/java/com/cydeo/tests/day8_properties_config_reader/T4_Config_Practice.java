@@ -1,7 +1,5 @@
 package com.cydeo.tests.day8_properties_config_reader;
-
-
-
+import com.cydeo.utilities.Driver;
 import com.cydeo.utilities.ConfigurationReader;
 import org.openqa.selenium.*;
 import org.testng.*;
@@ -31,20 +29,21 @@ public class T4_Config_Practice {
     public void google_search_test(){
         //Driver.getDriver() --> driver
 
-        driver.get("https://www.google.com");
+        Driver.getDriver().get("https://www.google.com");
 
         //3- Write “apple” in search box
-        WebElement googleSearchBox = driver.findElement(By.xpath("//input[@name='q']"));
+        WebElement googleSearchBox = Driver.getDriver().findElement(By.xpath("//input[@name='q']"));
 
         googleSearchBox.sendKeys(ConfigurationReader.getProperty("searchValue") + Keys.ENTER);
 
         //4- Verify title:
         //Expected: apple - Google Search
         String expectedTitle = ConfigurationReader.getProperty("searchValue")+" - Google Search";
-        String actualTitle = driver.getTitle();
+        String actualTitle = Driver.getDriver().getTitle();
 
         Assert.assertEquals(actualTitle, expectedTitle);
     }
+
 
 
 }

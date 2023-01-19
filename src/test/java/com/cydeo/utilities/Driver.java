@@ -28,7 +28,7 @@ public class Driver {
     Create a re-usable utility method which will return same driver instance when we call it
      */
 
-    private static WebDriver getDriver(){
+    public static WebDriver getDriver(){
         if (driver == null){
              /*
             We read our browserType from configuration.properties.
